@@ -1,60 +1,52 @@
-Composer .lock Parser
-==================
-
-OOP reader of composer.lock file
-
-Introduction
-------------
-Parse composer.lock file and return full information about installed packages in OOP style.
-
-Requirements
-------------
-
-Features / Goals
-----------------
-* Create Composer Entity with full general information from composer.lock [DONE]
-* Create Package Entity with full information about packges [DONE]
-
-Installation
-------------
-### Main Setup
-
-```json
-"require": {
-    "t4web/composer-lock-parser": "1.1.*"
-}
-```
-
-Usage
-------------
-Creating ComposerInfo object and getting all of the packages
-```php
-$composerInfo = new \ComposerLockParser\ComposerInfo('/path/to/composer.lock');
-// default all packages
-$packages = $composerInfo->getPackages();
-// or explicitly get all packages
-$packages = $composerInfo->getPackages($composerInfo::ALL);
-
-echo $packages[0]->getName();
-echo $packages[0]->getVersion();
-echo $packages[0]->getNamespace();
-```
-
-Getting just production packages.
-```php
-$composerInfo = new \ComposerLockParser\ComposerInfo('/path/to/composer.lock');
-$packages = $composerInfo->getPackages($composerInfo::PRODUCTION);
-```
-
-Getting just development packages.
-```php
-$composerInfo = new \ComposerLockParser\ComposerInfo('/path/to/composer.lock');
-$packages = $composerInfo->getPackages($composerInfo::DEVELOPMENT);
-```
-
-Testing
-------------
-Tests runs with Codeception
-```bash
-$ codeception run
-```
+<h1 align="center">
+    <img src="https://img.shields.io/badge/ComposerLockParser-🎯-blueviolet?style=for-the-badge" alt="Repo Badge">
+  </h1>
+  
+  <p align="center">
+    <img src="https://avatars.githubusercontent.com/u/121193249?v=4" width="100" style="border-radius:50%;">
+  </p>
+  
+  ---
+  
+  ## 📖 About the Project
+  - **Repository Name:** ComposerLockParser
+  - **Owner:** KanishkChhajed
+  - **Visibility:** public
+  - **Primary Language(s):** PHP
+  
+  ---
+  
+  ## 📊 Stats
+  
+  | Stars | Forks | Watchers | Open Issues | Closed Issues |
+  |:----:|:-----:|:--------:|:-----------:|:-------------:|
+  | 0 | 0 | 0 | 0 | 0 |
+  
+  ---
+  
+  ## 📢 Last Commit
+  
+  > "Adding my workflow for testing"
+  
+  ---
+  
+  ## 🤝 Contributors
+  
+  
+  - [`maxgu`](#)
+  
+  - [`strausmann`](#)
+  
+  - [`fr3nch13`](#)
+  
+  - [`smalot`](#)
+  
+  - [`tuutti`](#)
+  
+  - [`KanishkChhajed`](#)
+  
+  
+  ---
+  
+  > *Generated with ❤️ by an automated GitHub Action* 🚀
+  
